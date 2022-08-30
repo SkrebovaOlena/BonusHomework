@@ -25,7 +25,7 @@ public class Main {
 
         // Заповнити колекцію рандомними числами, і повернути кількість всіх не парних
         long count = numbers.stream()
-                .filter(integer -> integer %2!=0)
+                .filter(a -> a %2!=0)
                 .count();
         System.out.println("task 2 " + count);
 
@@ -53,7 +53,7 @@ public class Main {
         // Просортувати ліст String у лексикографічному порядку
         System.out.println("task 5: ");
         strings.stream()
-                .sorted((a1, a2) -> a1.compareTo(a2))
+                .sorted()
                 .forEach(System.out::println);
 
         // Вивести кількість букв ‘a’ у масиві String
